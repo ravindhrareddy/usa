@@ -17,20 +17,19 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
-
-  <dependencies>
-   <distributionManagement>
+  <distributionManagement>
     <repository>
       <id>deployment</id>
       <name>Internal Releases</name>
       <url>http://3.82.222.3:8081/repository/samplerelease/</url>
     </repository>
-    <repository>
+    <SnapshotRepository>
       <id>deployment</id>
       <name>Internal Snapshot Releases</name>
       <url>http://3.82.222.3:8081/repository/samplesnaps/</url>
-    </repository>
-  </distributionManagement>
+    </SnapshotRepository>
+    </distributionManagement>
+    <dependencies>
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>
